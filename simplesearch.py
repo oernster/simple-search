@@ -41,12 +41,14 @@ class SimpleSearch(object):
         if len(self.sorted_dict.keys()) == 0:
             print("No matches found.")
         else:
+            sorted_results = sorted(self.sorted_dict.items(), key=lambda x: int(x[1]), reverse=True)
             cnt = 0
-            for k, v in self.sorted_dict.items():
+            for filename, percentage in sorted_results:
                 cnt += 1
                 if cnt == 10:
                     break
-                print(f"{k}: {v}%")
+                print(f"{filename}: {percentage}%")
+
     
     def search(self):
         pc_dict = {}
