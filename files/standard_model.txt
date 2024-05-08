@@ -1,0 +1,11 @@
+Standard Model
+Main article: Standard Model
+The current state of the classification of all elementary particles is explained by the Standard Model, which gained widespread acceptance in the mid-1970s after experimental confirmation of the existence of quarks. It describes the strong, weak, and electromagnetic fundamental interactions, using mediating gauge bosons. The species of gauge bosons are eight gluons, 
+W−
+, 
+W+
+ and 
+Z
+ bosons, and the photon.[6] The Standard Model also contains 24 fundamental fermions (12 particles and their associated anti-particles), which are the constituents of all matter.[7] Finally, the Standard Model also predicted the existence of a type of boson known as the Higgs boson. On 4 July 2012, physicists with the Large Hadron Collider at CERN announced they had found a new particle that behaves similarly to what is expected from the Higgs boson.[8]
+
+The Standard Model, as currently formulated, has 61 elementary particles.[9] Those elementary particles can combine to form composite particles, accounting for the hundreds of other species of particles that have been discovered since the 1960s. The Standard Model has been found to agree with almost all the experimental tests conducted to date. However, most particle physicists believe that it is an incomplete description of nature and that a more fundamental theory awaits discovery (See Theory of Everything). In recent years, measurements of neutrino mass have provided the first experimental deviations from the Standard Model, since neutrinos do not have mass in the Standard Model.[10]

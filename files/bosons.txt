@@ -1,0 +1,3 @@
+Bosons
+Main article: Boson
+Bosons are the mediators or carriers of fundamental interactions, such as electromagnetism, the weak interaction, and the strong interaction.[18] Electromagnetism is mediated by the photon, the quanta of light.[19]: 29–30  The weak interaction is mediated by the W and Z bosons.[20] The strong interaction is mediated by the gluon, which can link quarks together to form composite particles.[21] Due to the aforementioned color confinement, gluons are never observed independently.[22] The Higgs boson gives mass to the W and Z bosons via the Higgs mechanism[23] – the gluon and photon are expected to be massless.[22] All bosons have an integer quantum spin (0 and 1) and can have the same quantum state.[18]

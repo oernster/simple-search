@@ -1,0 +1,14 @@
+Subatomic particles
+Elementary Particles
+Types	Generations	Antiparticle	Colours	Total
+Quarks	2	3	Pair	3	36
+Leptons	Pair	None	12
+Gluons	1	None	Own	8	8
+Photon	Own	None	1
+Z Boson	Own	1
+W Boson	Pair	2
+Higgs	Own	1
+Total number of (known) elementary particles:	61
+Modern particle physics research is focused on subatomic particles, including atomic constituents, such as electrons, protons, and neutrons (protons and neutrons are composite particles called baryons, made of quarks), that are produced by radioactive and scattering processes; such particles are photons, neutrinos, and muons, as well as a wide range of exotic particles.[11] All particles and their interactions observed to date can be described almost entirely by the Standard Model.[6]
+
+Dynamics of particles are also governed by quantum mechanics; they exhibit wave–particle duality, displaying particle-like behaviour under certain experimental conditions and wave-like behaviour in others. In more technical terms, they are described by quantum state vectors in a Hilbert space, which is also treated in quantum field theory. Following the convention of particle physicists, the term elementary particles is applied to those particles that are, according to current understanding, presumed to be indivisible and not composed of other particles.[9]

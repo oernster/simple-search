@@ -1,0 +1,13 @@
+Quarks and leptons
+Main articles: Quark and Lepton
+
+A Feynman diagram of the 
+β−
+ decay, showing a neutron (n, udd) converted into a proton (p, udu). "u" and "d" are the up and down quarks, "
+e−
+" is the electron, and "
+ν
+e" is the electron antineutrino.
+Ordinary matter is made from first-generation quarks (up, down) and leptons (electron, electron neutrino).[12] Collectively, quarks and leptons are called fermions, because they have a quantum spin of half-integers (-1/2, 1/2, 3/2, etc.). This causes the fermions to obey the Pauli exclusion principle, where no two particles may occupy the same quantum state.[13] Quarks have fractional elementary electric charge (-1/3 or 2/3)[14] and leptons have whole-numbered electric charge (0 or 1).[15] Quarks also have color charge, which is labeled arbitrarily with no correlation to actual light color as red, green and blue.[16] Because the interactions between the quarks stores energy which can convert to other particles when the quarks are far apart enough, quarks cannot be observed independently. This is called color confinement.[16]
+
+There are three known generations of quarks (up and down, strange and charm, top and bottom) and leptons (electron and its neutrino, muon and its neutrino, tau and its neutrino), with strong indirect evidence that the fourth generation of fermions does not exist.[17]

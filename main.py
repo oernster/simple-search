@@ -13,7 +13,7 @@ class Main(object):
         self.num_files = 0
         self.sorted_dict = {}
 
-    def read_files(directory):
+    def read_files(self, directory):
         file_word_dicts = {}
         for filename in os.listdir(directory):
             filepath = os.path.join(directory, filename)
@@ -42,25 +42,29 @@ class Main(object):
             print("No matches found.")
         else:
             for k, v in self.sorted_dict.items():
-                print(f"{v}: {k}%")
+                print(f"{k}: {v}%")
     
     def search(self):
         pc_dict = {}
         file_word_dicts = self.read_files(self.directory)
-        search_list = str(input("search>")).split(' ')
-        if search_list == ':quit':
-            sys.exit(1)
+        source_data = input("search>")
+        if source_data == ':quit':
+            sys.exit(1)        
+        search_list = str(source_data).split(' ')
         cnt = 0
         for filename, word_dict in file_word_dicts.items():
             for key, value in word_dict.items():
                 for sl in search_list:
-                    if sl[:1] == key:
+                    if sl[:1].lower() == key.lower():
                         for v in value:
-                            if sl == value:
+                            if sl.lower() == v.lower():
                                 cnt += 1
-            pc = int((cnt / len(search_list)) * 100)
-            if pc != 0:
-                pc_dict[pc] = f"{filename}"
+                pc = int((cnt / len(search_list)) * 100)
+                if pc != 0:
+                    if pc > 100:
+                        pc = 100
+                    pc_dict[filename] = f"{pc}"
+                cnt = 0
         
         # do for each filename rank
         sorted_keys = sorted(pc_dict.keys())
