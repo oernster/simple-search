@@ -3,7 +3,7 @@ import os
 from collections import OrderedDict
 
 
-class Main(object):
+class SimpleSearch(object):
     def __init__(self, directory):
         self.directory = directory
         self.init()
@@ -41,7 +41,9 @@ class Main(object):
         if len(self.sorted_dict.keys()) == 0:
             print("No matches found.")
         else:
-            for k, v in self.sorted_dict.items():
+            for cnt, k, v in enumerate(self.sorted_dict.items()):
+                if cnt == 10:
+                    break
                 print(f"{k}: {v}%")
     
     def search(self):
@@ -75,4 +77,4 @@ if __name__ == "__main__":
         sys.exit(1)
    
     directory_path = sys.argv[1]
-    m = Main(directory_path)
+    m = SimpleSearch(directory_path)
