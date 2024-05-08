@@ -41,13 +41,16 @@ class SimpleSearch(object):
         if len(self.sorted_dict.keys()) == 0:
             print("No matches found.")
         else:
-            for cnt, k, v in enumerate(self.sorted_dict.items()):
+            cnt = 0
+            for k, v in self.sorted_dict.items():
+                cnt += 1
                 if cnt == 10:
                     break
                 print(f"{k}: {v}%")
     
     def search(self):
         pc_dict = {}
+        self.sorted_dict.clear()  # Clearing sorted_dict at the beginning
         file_word_dicts = self.read_files(self.directory)
         source_data = input("search>")
         if source_data == ':quit':
@@ -61,14 +64,14 @@ class SimpleSearch(object):
                         for v in value:
                             if sl.lower() == v.lower():
                                 matched_words.append(v.lower())
-            pc = int((len(set(matched_words)) / len(set(search_list))) * 100)
-            if pc != 0:
-                if pc > 100:
-                    pc = 100
-                pc_dict[filename] = f"{pc}"
-        
-            sorted_values = sorted(pc_dict.values())
-            self.sorted_dict.update({filename: value for value in sorted_values})
+            if matched_words:  # Check if any matched words found
+                pc = int((len(set(matched_words)) / len(set(search_list))) * 100)
+                if pc != 0:
+                    if pc > 100:
+                        pc = 100
+                    pc_dict[filename] = f"{pc}"
+        sorted_values = sorted(pc_dict.values())
+        self.sorted_dict.update({filename: value for filename, value in pc_dict.items()})
 
 
 if __name__ == "__main__":
