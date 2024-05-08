@@ -3,6 +3,10 @@ import os
 from collections import OrderedDict
 
 
+class QuitSearch(Exception):
+    pass
+
+
 class SimpleSearch(object):
     def __init__(self, directory):
         self.directory = directory
@@ -34,9 +38,12 @@ class SimpleSearch(object):
     def run(self):
         while True:
             self.init()
-            self.search()
-            self.display_results()
-
+            try:
+                self.search()
+                self.display_results()
+            except QuitSearch:
+                break
+            
     def display_results(self):
         if len(self.sorted_dict.keys()) == 0:
             print("No matches found.")
