@@ -51,26 +51,22 @@ class Main(object):
         if source_data == ':quit':
             sys.exit(1)        
         search_list = str(source_data).split(' ')
-        cnt = 0
         for filename, word_dict in file_word_dicts.items():
+            matched_words = []
             for key, value in word_dict.items():
                 for sl in search_list:
                     if sl[:1].lower() == key.lower():
                         for v in value:
                             if sl.lower() == v.lower():
-                                cnt += 1
-                pc = int((cnt / len(search_list)) * 100)
-                if pc != 0:
-                    if pc > 100:
-                        pc = 100
-                    pc_dict[filename] = f"{pc}"
-                cnt = 0
+                                matched_words.append(v.lower())
+            pc = int((len(set(matched_words)) / len(set(search_list))) * 100)
+            if pc != 0:
+                if pc > 100:
+                    pc = 100
+                pc_dict[filename] = f"{pc}"
         
-        # do for each filename rank
-        sorted_keys = sorted(pc_dict.keys())
-        self.sorted_dict = {key: pc_dict[key] for key in sorted_keys}
-
-
+            sorted_values = sorted(pc_dict.values())
+            self.sorted_dict.update({filename: value for value in sorted_values})
 
 
 if __name__ == "__main__":
